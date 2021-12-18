@@ -1,0 +1,18 @@
+.block-type-text,
+.block-type-text_two_column {
+
+  .content {
+    border: 1px solid $border;
+    border-radius: $radius;
+    background: $light;
+    padding: 1.5rem;
+
+    a:not(.button) {
+      color: #731100;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

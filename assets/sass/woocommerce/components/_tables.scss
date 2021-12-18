@@ -1,0 +1,68 @@
+.woocommerce-page {
+
+  .woocommerce,
+  .product-panel--additional_information {
+
+    table {
+      @extend %block;
+      width: 100%;
+      background-color: $table-background-color;
+      color: $table-color;
+
+      td,
+      th {
+        border: $table-cell-border;
+        border-width: 1px;
+        padding: $table-cell-padding;
+        vertical-align: top;
+      }
+
+      thead {
+        background-color: $table-head-background-color;
+
+        td,
+        th {
+          border-width: 1px;
+          color: $table-head-cell-color;
+        }
+      }
+
+      tfoot {
+        background-color: $table-foot-background-color;
+
+        td,
+        th {
+          border-width: 1px;
+          color: $table-foot-cell-color;
+        }
+      }
+
+      tbody {
+        background-color: $table-body-background-color;
+
+        tr {
+
+          &:last-child {
+
+            td,
+            th {
+              border-bottom-width: 1px;
+            }
+          }
+
+          &:nth-child(even) {
+            background-color: $table-striped-row-even-background-color;
+          }
+        }
+      }
+
+      &.cart {
+
+        td,
+        th {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.archive {
+
+  .card {
+
+    .tag {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      font-size: 0.75rem;
+    }
+
+    h3 {
+      height: 70px;
+    }
+  }
+}
+
+// Pagination
+
+.post-pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  .previous {
+    order: 1;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: auto;
+      background: none;
+      border: 1px solid $white-ter;
+      margin: 0;
+      padding: 0.750rem;
+    }
+  }
+
+  .next {
+    order: 3;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: auto;
+      background: none;
+      border: 1px solid $white-ter;
+      margin: 0;
+      padding: 0.75rem;
+    }
+  }
+
+  nav {
+    order: 2;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+
+        .page-numbers {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 3rem;
+          width: 3rem;
+          background: none;
+          border: 1px solid $white-ter;
+          margin: 0 2px;
+
+          &:hover {
+            border-color: $grey;
+          }
+
+          &.dots {
+            border-color: transparent;
+            color: $white-ter;
+            align-items: flex-end;
+          }
+
+          &.current {
+            background: $primary;
+            border-color: $primary;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

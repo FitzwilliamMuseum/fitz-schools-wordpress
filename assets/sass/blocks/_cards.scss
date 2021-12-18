@@ -1,0 +1,87 @@
+section.block-type-cards,
+section.block-type-modules,
+section.block-type-cards_carousel {
+
+  .subheading {
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: none;
+      box-shadow: unset;
+
+      .image {
+        display: flex;
+        width: 100%;
+        border: 1px solid $border;
+        background: $white;
+        border-radius: $radius $radius 0 0;
+        margin-bottom: -1px;
+
+        a {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      iframe {
+        max-width: 100%;
+      }
+
+      .card-content {
+        border: 1px solid $border;
+        border-radius: 0 0 $radius $radius;
+      }
+
+      .tag {
+        position: absolute;
+        top: 0.75rem;
+        left: 0.75rem;
+        font-size: 0.75rem;
+      }
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        flex: 100% 0 2;
+      }
+
+      p {
+        flex: 100% 0 1;
+        font-size: $size-7;
+      }
+
+      p:not(:last-child) {
+        margin-bottom: 1.25rem;
+      }
+
+      a:not(.button) {
+        text-decoration: underline;
+      }
+
+      .button {
+        white-space: inherit;
+      }
+    }
+  }
+}
+
+section.block-type-cards_carousel,
+section.block-type-modules {
+
+  .cards-carousel {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+
+    .slick-slide {
+      padding: 0.75rem;
+    }
+  }
+}

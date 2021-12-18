@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+// Initial Variables
+@import "global/_initial-variables.scss";
+
+// Bulma
+@import "../bulma/bulma.sass";
+
+// All
+@import "global/_all.scss";
+@import "components/_all.scss";
+@import "layout/_all.scss";
+@import "templates/_all.scss";
+@import "woocommerce/_all.scss";
+@import "blocks/_all.scss";

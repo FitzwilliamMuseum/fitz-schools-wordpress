@@ -1,0 +1,47 @@
+.top-bar {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  aside {
+    display: inline-block;
+    margin: 0 1.75rem;
+
+    .menu {
+      display: inline-flex;
+
+      li {
+        padding: 0 0.75rem;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  #top-bar-left {
+
+    aside {
+      margin-left: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  #top-bar-right {
+
+    aside {
+      margin-right: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

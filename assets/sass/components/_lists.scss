@@ -1,0 +1,17 @@
+.site-main {
+
+  ul,
+  ol {
+    list-style: disc;
+    margin-left: 1.2em;
+    margin-bottom: 1.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ol {
+    list-style: decimal;
+  }
+}

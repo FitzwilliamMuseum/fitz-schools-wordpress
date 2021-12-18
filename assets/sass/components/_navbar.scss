@@ -1,0 +1,69 @@
+.navbar-wrapper {
+  position: relative;
+
+  nav.navbar {
+    @include transition(all 300ms ease-in-out);
+
+    .navbar-brand {
+      align-items: center;
+
+      .navbar-item {
+
+        h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+          margin: 0;
+          color: inherit;
+        }
+
+        img {
+          max-height: unset;
+          height: 50px;
+        }
+      }
+    }
+
+    .navbar-item,
+    .navbar-link,
+    .navbar-dropdown {
+
+      a:not(.button) {
+        color: inherit;
+      }
+
+      &:hover {
+
+        > a:not(.button) {
+          color: inherit;
+        }
+
+        &::after {
+          border-color: inherit;
+        }
+      }
+    }
+
+    .navbar-link:not(.is-arrowless)::after {
+      border-width: 2px;
+      height: 0.425em;
+      width: 0.425em;
+      margin-top: -0.225rem;
+    }
+
+    @include desktop {
+
+      &.is-fixed-top {
+        @include shadow(0 0 50px rgba($black,0.1));
+      }
+    }
+
+    @include touch {
+
+      #searchsubmit {
+        background: $black;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.woocommerce-page {
+
+  .woocommerce,
+  .variations_form,
+  .woocommerce-ordering,
+  .cart,
+  .comment-form {
+
+    label {
+      color: $label-color;
+      display: block;
+      font-size: 1rem;
+      font-weight: $label-weight;
+
+      &:not(:last-child) {
+        margin-bottom: .5em;
+      }
+    }
+
+    .button, input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="number"], select, textarea {
+      @include control;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="number"], select, textarea {
+      background-color: $input-background-color;
+      border-color: $input-border-color;
+      border-radius: $input-radius;
+      color: $input-color;
+
+      &:hover {
+        border-color: $input-hover-border-color;
+        color: $input-hover-color;
+      }
+
+      &:focus {
+        border-color: $input-focus-border-color;
+        color: $input-focus-color;
+      }
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="number"], textarea {
+      box-shadow: $input-shadow;
+      max-width: 100%;
+      width: 100%;
+
+      &:focus {
+        box-shadow: $input-focus-box-shadow-size $input-focus-box-shadow-color;
+      }
+    }
+
+    textarea {
+      display: block;
+      max-width: 100%;
+      min-width: 100%;
+      padding: $textarea-padding;
+      resize: vertical;
+    }
+
+    input[type=checkbox], input[type=radio] {
+      vertical-align: baseline;
+      cursor: pointer;
+    }
+
+    select {
+      cursor: pointer;
+      display: block;
+      font-size: 1em;
+      max-width: 100%;
+      outline: 0;
+      padding-right: 2.5em;
+    }
+
+    input[type="button"], input[type="submit"], button, .button {
+      @extend %control;
+      background-color: $button-background-color;
+      border-color: $button-border-color;
+      border-width: $button-border-width;
+      color: $button-color;
+      cursor: pointer;
+
+      &:hover {
+        border-color: darken($woocommerce-button-color, 10%);
+      }
+    }
+
+    .button.alt {
+      background: $woocommerce-button-color-alt;
+      border-color: $woocommerce-button-color-alt;
+      color: $white;
+
+      &:hover {
+        background: darken($woocommerce-button-color-alt, 10%);
+        border-color: darken($woocommerce-button-color-alt, 10%);
+      }
+    }
+
+    ul {
+      margin: 0;
+      list-style: none;
+
+      li {
+        padding-bottom: 7px;
+
+        label {
+          display: inline-block;
+          position: relative;
+          top: 1px;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}

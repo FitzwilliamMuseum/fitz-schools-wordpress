@@ -1,0 +1,57 @@
+.woocommerce-page {
+
+  .woocommerce {
+
+    .checkout {
+      display: flex;
+      flex-wrap: wrap;
+
+      .col2-set {
+        flex: 60% 1 0;
+
+        @include touch {
+          flex: 100% 1 0;
+          padding-left: 0;
+        }
+      }
+
+      #order_review_heading {
+        display: none;
+      }
+
+      .woocommerce-checkout-review-order {
+        flex: 40% 1 0;
+        padding-left: 3rem;
+
+        tfoot {
+
+          th,
+          td {
+            background-color: darken($table-striped-row-even-background-color, 4%);
+          }
+        }
+
+        .woocommerce-checkout-payment {
+          padding: $table-cell-padding;
+          border: $table-cell-border;
+          background: $table-striped-row-even-background-color;
+
+          .payment_box {
+            font-size: $size-7;
+            margin-bottom: 1rem;
+          }
+
+          .woocommerce-terms-and-conditions-wrapper {
+            font-size: $size-7;
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        @include touch {
+          flex: 100% 1 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

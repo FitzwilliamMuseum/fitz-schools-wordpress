@@ -1,0 +1,53 @@
+/*
+  Theme Name: Fitzwilliam Theme
+  Theme URI: http://www.danielbenson.co
+  Author: Daniel Benson
+  Author URI: http://www.danielbenson.co
+  Description: Fitzwilliam Theme
+  Version: 2.1.0
+  License: Copyright 2020
+  Text Domain: db-theme
+  */
+
+/* Enter your CSS here */
+
+figure.alignleft,
+img.alignleft {
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+
+figure.alignright,
+img.alignright {
+  float: right;
+  margin: 1rem 0 1rem 1rem;
+}
+
+figure.aligncenter,
+img.aligncenter {
+  display: block;
+  margin: 1rem auto;
+}
+
+.wp-caption-text {
+  font-size: 11px;
+  text-align: left;
+}
+
+figure.alignleft .wp-caption-text {
+  text-align: left;
+}
+
+figure.aligncenter .wp-caption-text {
+  text-align: center;
+}
+
+figure.alignright .wp-caption-text {
+  text-align: right;
+}
+
+figure.alignleft:first-child,
+figure.alignright:first-child,
+figure.aligncenter:first-child {
+  margin-top: 5px;
+}

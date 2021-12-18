@@ -1,0 +1,85 @@
+section.block-type-accordion {
+
+  .accordion,
+  .sub-accordion {
+    border: 1px solid $border;
+    border-radius: $radius;
+    background: $light;
+
+    .accordion-title,
+    .sub-accordion-title {
+      display: block;
+      position: relative;
+      padding: 1rem;
+      color: $black;
+      font-weight: $weight-medium;
+      cursor: pointer;
+      font-weight: $weight-bold;
+
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0.75rem;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        height: 2px;
+        width: 10px;
+        background: $white;
+        transition: all 300ms ease-in-out;
+      }
+
+      &::after {
+        transform: rotate(90deg);
+      }
+
+      &:hover {
+        background-color: darken($light, 2%);
+      }
+
+      &:not(:first-child) {
+        border-top: 1px solid $border;
+      }
+
+      &.is-active {
+
+        &::after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    .accordion-content,
+    .sub-accordion-content {
+      display: none;
+      position: relative;
+      padding: 1rem;
+      border-top: 1px solid $border;
+      background: $white;
+
+      a:not(.button) {
+        color: #731100;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .sub-accordion:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  @include tablet {
+
+    .accordion-text-with-image.image-left {
+
+      .image {
+        order: -1;
+      }
+    }
+  }
+}

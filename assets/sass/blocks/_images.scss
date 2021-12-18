@@ -1,0 +1,11 @@
+section.block-type-images {
+
+  img {
+    width: 100%;
+  }
+
+  a:not(.button) {
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+}

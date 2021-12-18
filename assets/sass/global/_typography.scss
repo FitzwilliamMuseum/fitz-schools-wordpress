@@ -1,0 +1,67 @@
+.is-font-regular {
+  font-weight: $weight-normal;
+}
+
+.is-font-light {
+  font-weight: $weight-light;
+}
+
+.is-font-bold, strong {
+  font-weight: $weight-semibold;
+  color: inherit;
+}
+
+html, body {
+  font-size: 17px;
+  line-height: 1.6;
+  color: $grey-dark;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  color: $black;
+  margin: 2.75rem 0 1rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1, .h1 {
+  font-size: $size-1;
+}
+
+h2, .h2 {
+  font-size: $size-2;
+}
+
+h3, .h3 {
+  font-size: $size-3;
+}
+
+h4, .h4 {
+  font-size: $size-4;
+}
+
+h5, .h5 {
+  font-size: $size-5;
+}
+
+small {
+  font-size: $size-7;
+}
+
+p {
+  margin-bottom: 1.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

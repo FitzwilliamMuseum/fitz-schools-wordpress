@@ -1,0 +1,49 @@
+$family-sans-serif: 'Lato', sans-serif;
+
+$size-1: 3.052rem;
+$size-2: 2.441rem;
+$size-3: 1.953rem;
+$size-4: 1.563rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.875rem;
+$size-8: 0.813rem;
+
+// Colours
+$black:	rgb(0, 0, 0);
+$black-bis:	rgb(18, 18, 18);
+$black-ter:	rgb(36, 36, 36);
+$grey-darker:	rgb(54, 54, 54);
+$grey-dark:	rgb(74, 74, 74);
+$grey:	rgb(181, 181, 181);
+$grey-light:	rgb(214, 214, 214);
+$grey-lighter:	rgb(245, 245, 245);
+$grey-lightest:	rgb(250, 250, 250);
+$white-ter:	rgb(250, 250, 250);
+$white-bis:	rgb(250, 250, 250);
+$white:	rgb(255, 255, 255);
+
+$primary: $black;
+$link: $black;
+$border: $grey-light;
+
+$body-background-color: #f0ede8;
+
+// Structure
+$fullhd: false;
+$section-padding-medium: 6rem;
+$section-padding-large: 9rem;
+
+// Content
+$content-heading-weight: false;
+$content-heading-line-height: false;
+
+// Radius
+$radius: 4px;
+
+// Controls
+$control-height: 2.95em;
+
+@mixin arrow {
+  border-width: 10px;
+}

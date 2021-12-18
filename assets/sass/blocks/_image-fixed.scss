@@ -1,0 +1,14 @@
+.block-type-image_fixed {
+  height: 150px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,64 @@
+.woocommerce-page {
+
+  .woocommerce {
+
+    .woocommerce-MyAccount-navigation {
+      display: inline-block;
+      width: 30%;
+      max-width: 100%;
+      background: $table-striped-row-even-background-color;
+      vertical-align: top;
+
+      ul {
+        list-style: none;
+        margin-left: 0;
+
+        li {
+          padding: 1rem;
+          border-bottom: $table-cell-border;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+
+      @include touch {
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .woocommerce-MyAccount-content {
+      display: inline-block;
+      width: calc(70% - 3rem);
+      padding-left: 3rem;
+      max-width: 100%;
+      vertical-align: top;
+
+      section:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      .edit-account {
+
+        fieldset {
+          margin-bottom: 1.5rem;
+        }
+
+        legend {
+          font-size: $size-5;
+          font-weight: $weight-bold;
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      @include touch {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}

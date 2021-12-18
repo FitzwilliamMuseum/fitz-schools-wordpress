@@ -1,0 +1,110 @@
+section.block-type-text_with_image {
+
+  .content {
+    border: 1px solid $border;
+    border-radius: $radius;
+    background: $light;
+    padding: 1.5rem;
+
+    a:not(.button) {
+      color: #731100;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.has-image-left {
+
+    .content-holder {
+      order: 1;
+    }
+
+    .image-holder {
+      order: 0;
+
+      img {
+        width: 100%
+      }
+    }
+  }
+
+  @include desktop {
+
+    .content-holder,
+    .image-holder {
+
+      .content,
+      .image {
+        padding: 0 0.75rem;
+      }
+    }
+  }
+
+  &.is-full {
+
+    @include desktop {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .columns.is-vcentered {
+        align-items: unset;
+      }
+
+      .content-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+
+        .content {
+          padding: 6rem 3rem 6rem 0;
+        }
+      }
+
+      .image-holder {
+
+        .image {
+          padding: 0;
+          height: 100%;
+        }
+
+        img {
+          width: 50vw;
+          max-width: 50vw;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      &.has-image-left {
+
+        .content-holder {
+
+          .content {
+            padding: 6rem 0 6rem 3rem;
+          }
+        }
+
+        .image-holder {
+
+          img {
+            margin-left: calc(-50vw + 100%);
+          }
+        }
+      }
+    }
+
+    @include touch {
+
+      .image-holder {
+
+        .image {
+          padding-top: 1.5rem;
+        }
+      }
+    }
+  }
+}

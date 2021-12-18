@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>select-down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="select-down" transform="translate(7.500000, 5.000000) rotate(-90.000000) translate(-7.500000, -5.000000) translate(3.000000, -2.000000)" fill="#29292E" fill-rule="nonzero">
+            <path d="M8.38,0.19 C8.52820007,0.315467955 8.61854568,0.496159171 8.63,0.69 C8.62083654,0.845072663 8.56118266,0.991729574 8.46180921,1.10842902 L2.7049594,6.86436352 L8.38,12.54 C8.63929698,12.8229071 8.63929698,13.2570929 8.38,13.54 C8.2587807,13.6949019 8.07642602,13.7897264 7.88,13.8 C7.68615917,13.7885457 7.50546796,13.6982001 7.38,13.55 L1.07,7.23 C1.01211854,7.10765176 0.988925711,6.97307747 1.00111041,6.84056844 C1.00074516,6.7250026 1.02307861,6.60869081 1.07,6.5 L7.38,0.19 C7.66639007,-0.0601819722 8.09360993,-0.0601819722 8.38,0.19 Z" id="Path-2"></path>
+        </g>
+    </g>
+</svg>
